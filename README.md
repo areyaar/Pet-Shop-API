@@ -1,3 +1,4 @@
+
 # Pet Shop API
 
 This is a RESTful API that takes an excel file as input, parses it and stores the data in the database.
@@ -5,8 +6,8 @@ It uses NodeJs, Express and MongoDB.
 
 
 # Features
--   A POST route “/api/pet” to add pets from an excel file
--   A GET route “/api/pet” to get all the pets in the database
+-   A POST route “/api/pet” to add pets from an excel file to the Database
+-   A GET route “/api/pet” to get all the pets in the Database
 -   A GET route “/api/pet/**petId**” to get a specific pet
 -   A PATCH route “/api/pet/**petId**” to update the details of a specific pet
 -   A DELETE route “/api/pet/**petId**” to delete a specific pet
@@ -15,8 +16,11 @@ It uses NodeJs, Express and MongoDB.
 - Uses the node package  [SheetJS](https://www.npmjs.com/package/xlsx) from [npm](https://www.npmjs.com/) to  extract pet data from the spreadsheet "data.xlsx" in the local directory.
 
 ## Working
-- The Excel file has colums **Name**, **Type**, **Breed** and **Age**.
-- ![Excel File](excel demo.jpg)
+- The Excel file has colums **Name**, **Type**, **Breed** and **Age**.\
+![Excel File](img/excel.png)
+- Node Package [SheetJS](https://www.npmjs.com/package/xlsx) takes the excel file and parses it to JSON and adds it to the Database.
+- Upon sending a GET Request to `http://localhost:3000/api/pet` we get a JSON response containing all the pets in the Database.\
+![Postman Snip](img/postman.png)
 
 
 ## Setting up in localhost
