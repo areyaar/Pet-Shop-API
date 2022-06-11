@@ -6,6 +6,7 @@ const xlsx = require('xlsx');
 
 app.use(express.json());
 
+//Mongoose server setup
 mongoose.connect('mongodb://localhost:27017/pets', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("MONGO CONNECTION OPEN")
@@ -17,9 +18,12 @@ mongoose.connect('mongodb://localhost:27017/pets', { useNewUrlParser: true, useU
 
 app.use(express.urlencoded({ extended: true }));
 
+
+//This API takes the pet data from the local data.xlsx file
+
 var sheet = xlsx.readFile('data.xlsx'); //got the file
-var wb = sheet.Sheets['Sheet1']; //got the sheet
-var data = xlsx.utils.sheet_to_json(wb); // sheet data in JSON
+var wb = sheet.Sheets['Sheet1']; //got the sheet inside the file
+var data = xlsx.utils.sheet_to_json(wb); // sheet data parsed to JSON
 
 //Getting all the pets from the database
 app.get('/api/pet', async (req, res) => {
