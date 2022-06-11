@@ -18,7 +18,7 @@ It uses NodeJs, Express and MongoDB.
 ## Working
 - The Excel file has colums **Name**, **Type**, **Breed** and **Age**.\
 ![Excel File](img/excel.png)
-- Node Package [SheetJS](https://www.npmjs.com/package/xlsx) takes the excel file and parses it to JSON and adds it to the Database.
+- Node Package [SheetJS](https://www.npmjs.com/package/xlsx) takes the excel file and parses it and adds it to the Database.
 - Upon sending a GET Request to `http://localhost:3000/api/pet` we get a JSON response containing all the pets in the Database.\
 ![Postman Snip](img/postman2.png)
 
