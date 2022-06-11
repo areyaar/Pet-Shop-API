@@ -14,6 +14,9 @@ It uses NodeJs, Express and MongoDB.
 ## Tools Used
 - Uses the node package  [SheetJS](https://www.npmjs.com/package/xlsx) from [npm](https://www.npmjs.com/) to  extract pet data from the spreadsheet "data.xlsx" in the local directory.
 
+## Working
+- The Excel file has colums **Name**, **Type**, **Breed** and **Age**.
+- ![Excel File](excel demo.jpg)
 
 
 ## Setting up in localhost
