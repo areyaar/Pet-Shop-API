@@ -24,7 +24,7 @@ It uses NodeJs, Express and MongoDB.
 
 
 
-## Setting up in localhost
+## Setting up on localhost
 
 - Install and set up [NodeJS](https://www.youtube.com/watch?v=JINE4D0Syqw&ab_channel=Telusko).
 - Set up [MongoDB](https://www.youtube.com/watch?v=wcx3f0eUiAw&ab_channel=WebDevSimplified).
