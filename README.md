@@ -13,7 +13,7 @@ It uses NodeJs, Express and MongoDB.
 -   A DELETE route “/api/pet/**petId**” to delete a specific pet
 
 ## Tools Used
-- Uses the node package  [SheetJS](https://www.npmjs.com/package/xlsx) from [npm](https://www.npmjs.com/) to  extract pet data from the spreadsheet "data.xlsx" in the local directory.
+- Uses the Node package  [SheetJS](https://www.npmjs.com/package/xlsx) from [npm](https://www.npmjs.com/) to  extract pet data from the spreadsheet named "data.xlsx" in the local directory.
 
 ## Working
 - The Excel file has colums **Name**, **Type**, **Breed** and **Age**.\
